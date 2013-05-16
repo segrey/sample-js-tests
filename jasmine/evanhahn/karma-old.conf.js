@@ -1,17 +1,15 @@
 // Karma configuration
-// Generated on Thu May 16 2013 01:34:14 GMT+0400 (MSK)
+// Generated on Sun Apr 14 2013 21:56:48 GMT+0400 (MSK)
 
 
 // base path, that will be used to resolve files and exclude
 basePath = '';
 
 
-// frameworks to use
-frameworks = ['jasmine'];
-
-
 // list of files / patterns to load in the browser
 files = [
+  JASMINE,
+  JASMINE_ADAPTER,
   'src/**/*.js',
   'spec/**/*Spec.js'
 ];
@@ -24,7 +22,7 @@ exclude = [
 
 
 // test results reporter to use
-// possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
+// possible values: 'dots', 'progress', 'junit'
 reporters = ['progress'];
 
 
@@ -46,7 +44,7 @@ logLevel = LOG_INFO;
 
 
 // enable / disable watching file and executing tests whenever any file changes
-autoWatch = true;
+autoWatch = false;
 
 
 // Start these browsers, currently available:
@@ -67,10 +65,3 @@ captureTimeout = 60000;
 // Continuous Integration mode
 // if true, it capture browsers, run tests and exit
 singleRun = false;
-
-
-// plugins to load
-plugins = [
-  'karma-jasmine',
-  'karma-chrome-launcher'
-];
