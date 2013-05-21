@@ -1,0 +1,5 @@
+load:
+  - src/percentage.js
+
+test:
+  - test/percentage-test.js
