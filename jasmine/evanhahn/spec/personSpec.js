@@ -14,9 +14,9 @@ describe("Person", function () {
       expect(fakePerson.helloSomeone).toHaveBeenCalledWith("world");
     });
     it("calls undefined method", function () {
-      undefiedMethod();
+      undefinedMethod();
     });
   });
 });
 
-//anotherUndefiedMethod();
+//anotherUndefinedMethod();
