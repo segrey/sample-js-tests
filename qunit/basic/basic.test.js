@@ -6,7 +6,7 @@ test("a basic test example", function() {
 });
 
 // 2 tests - equals and one with more debug
-test("a test", function() {
+test("a test", function namedFunction() {
   var actual = 1;
   equal(actual, 1);
   equal(actual, 0, "this message is added to the assertion result, useful for debugging");
