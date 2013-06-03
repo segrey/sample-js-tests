@@ -3,7 +3,7 @@ describe("World", function() {
   beforeEach(function () {
     this.addMatchers({
       toBeDivisibleByTwo: function () {
-        return (this.actual % 2) == 0;
+        return (this.actual % 2) === 0;
       }
     });
   });
