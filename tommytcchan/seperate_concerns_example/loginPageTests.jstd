@@ -1,0 +1,5 @@
+load:
+ - loginPageAfter.js
+
+test:
+ - tests/loginPageTests.js
