@@ -1,1 +1,4 @@
-{}
+{
+  "eqnull" : true,
+  "laxcomma" : true
+}
