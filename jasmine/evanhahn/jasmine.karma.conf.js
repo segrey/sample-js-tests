@@ -31,10 +31,10 @@ preprocessors = {
     '**/src/**/*.js': 'coverage'
 };
 
-//coverageReporter = {
-//    type : 'lcov',
-//    dir : 'coverage/'
-//};
+coverageReporter = {
+    type : 'lcov',
+    dir : '/home/segrey/WebstormProjects/sample-js-tests/jasmine/evanhahn/coverage'
+};
 
 // web server port
 port = 9876;
