@@ -35,7 +35,7 @@ module.exports = function (karma) {
 
     coverageReporter: {
       type: 'lcov',
-      dir: '/home/segrey/WebstormProjects/sample-js-tests/jasmine/evanhahn/coverage'
+      dir: 'coverage'
     },
 
 // web server port
