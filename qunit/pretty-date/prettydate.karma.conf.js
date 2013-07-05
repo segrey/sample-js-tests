@@ -1,8 +1,8 @@
 // Karma configuration
 // Generated on Wed Jun 19 2013 15:00:04 GMT+0400 (MSK)
 
-module.exports = function(karma) {
-  karma.configure({
+module.exports = function(config) {
+  config.set({
 
     // base path, that will be used to resolve files and exclude
     basePath: '',
@@ -45,7 +45,7 @@ module.exports = function(karma) {
 
     // level of logging
     // possible values: karma.LOG_DISABLE || karma.LOG_ERROR || karma.LOG_WARN || karma.LOG_INFO || karma.LOG_DEBUG
-    logLevel: karma.LOG_INFO,
+    logLevel: config.LOG_INFO,
 
 
     // enable / disable watching file and executing tests whenever any file changes
