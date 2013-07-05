@@ -48,7 +48,7 @@ module.exports = function(config) {
 
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: true,
+    autoWatch: false,
 
 
     // Start these browsers, currently available:
@@ -59,7 +59,7 @@ module.exports = function(config) {
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
-    browsers: ['Chrome'],
+    browsers: [],
 
 
     // If browser does not capture in given timeout [ms], kill it
