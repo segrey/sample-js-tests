@@ -1,4 +1,6 @@
-test("prettydate.format", function() {
+module("pretty date");
+
+test("format", function() {
   function date(then, expected) {
     equal(prettyDate.format("2008/01/28 22:25:00", then),
       expected);
