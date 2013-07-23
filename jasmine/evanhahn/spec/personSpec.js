@@ -13,7 +13,7 @@ describe("Person", function () {
       fakePerson.helloSomeone("world");
       expect(fakePerson.helloSomeone).toHaveBeenCalledWith("world");
     });
-    it("calls undefined method", function () {
+    xit("calls undefined method", function () {
       undefinedMethod();
     });
   });
