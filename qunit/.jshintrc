@@ -1,5 +1,4 @@
 {
   "undef" : true,
-  "globals" : ["test", "equals"],
-  "node" : true
+  "globals" : ["test", "equals", "equal", "deepEqual", "ok"]
 }
