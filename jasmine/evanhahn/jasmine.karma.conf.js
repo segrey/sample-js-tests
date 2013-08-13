@@ -63,7 +63,7 @@ module.exports = function (config) {
 // - Safari (only Mac)
 // - PhantomJS
 // - IE (only Windows)
-    browsers: [],
+//    browsers: ['Chrome', 'Firefox'],
 
 
 // If browser does not capture in given timeout [ms], kill it
@@ -74,12 +74,12 @@ module.exports = function (config) {
 // if true, it capture browsers, run tests and exit
     singleRun: false,
 
-
 // plugins to load
     plugins: [
       'karma-jasmine'
       , 'karma-chrome-launcher'
       , 'karma-coverage'
+      , 'karma-firefox-launcher'
     ]
   });
 };
