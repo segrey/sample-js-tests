@@ -19,4 +19,12 @@ describe("Person", function () {
   });
 });
 
+describe("hasOwnProperty", function() {
+
+  it("should be available", function () {
+    expect(Object.prototype.hasOwnProperty).toBeDefined();
+  });
+
+});
+
 //anotherUndefinedMethod();
