@@ -5,8 +5,11 @@ module.exports = function(config) {
   config.set({
 
     // base path, that will be used to resolve files and exclude
-    basePath: '../',
+    basePath: '.',
 
+    commonjsPreprocessor: {
+      modulesRoot: '../node_modules'
+    },
 
     // frameworks to use
     frameworks: ['jasmine', 'commonjs'],
@@ -14,7 +17,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'test/my.js'
+      '**/*.js',
+      '../node_modules/**/*.js'
     ],
 
 
@@ -30,7 +34,8 @@ module.exports = function(config) {
 
 
     preprocessors: {
-      '**/*.js': ['commonjs']
+      '**/*.js': ['commonjs'],
+      '../node_modules/**/*.js' : ['commonjs']
     },
 
     // web server port
@@ -69,8 +74,8 @@ module.exports = function(config) {
     // if true, it capture browsers, run tests and exit
     singleRun: false,
     plugins: [
-      'karma-commonjs'
-      , 'karma-jasmine'
+      'karma-jasmine'
+      , 'karma-commonjs'
       , 'karma-chrome-launcher'
     ]
   });
