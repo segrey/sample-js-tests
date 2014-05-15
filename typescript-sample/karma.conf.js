@@ -9,25 +9,18 @@ module.exports = function (config) {
 
 
 		// frameworks to use
-		frameworks: ['mocha'],
+		frameworks: ['jasmine'],
 
 
 		// list of files / patterns to load in the browser
 		files: [
-			'client/scripts/**/*.js',
-			'client-test/**/*.js'
-		],
-
-
-		// list of files to exclude
-		exclude: [
-			'client-test/libs/mocha.*'
+			'test-gen/**/*.js'
 		],
 
 
 		// test results reporter to use
 		// possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
-		reporters: ['progress', 'junit'],
+		reporters: ['progress'],
 
 
 		// web server port
@@ -55,7 +48,7 @@ module.exports = function (config) {
 		// - Safari (only Mac; has to be installed with `npm install karma-safari-launcher`)
 		// - PhantomJS
 		// - IE (only Windows; has to be installed with `npm install karma-ie-launcher`)
-		browsers: ['Chrome', 'Firefox', 'Safari', 'PhantomJS'],
+		browsers: ['PhantomJS'],
 
 
 		// If browser does not capture in given timeout [ms], kill it
