@@ -41,7 +41,6 @@ module.exports = function (grunt) {
             "eqeqeq": true,
             "evil": true,
             "forin": false,
-            // "indent": [false, 4], // WebStormのFormatterと相性が悪い
             "labelpos": true,
             "label-undefined": true,
             // "maxlen": [false, 140],
@@ -54,8 +53,8 @@ module.exports = function (grunt) {
               "trace"
             ],
             "noconstruct": true,
-            "nounreachable": false, // switchに警告出してくるので…
-            "noempty": false, // プロパティアクセス付き引数有りのコンストラクタまで怒られるので
+            "nounreachable": false,
+            "noempty": false,
             "oneline": [true,
               "check-open-brace",
               "check-catch",
@@ -63,12 +62,12 @@ module.exports = function (grunt) {
               "check-whitespace"
             ],
             "quotemark": [true, "double"],
-            "radix": false, // 10の基数指定するのめんどいので
+            "radix": false,
             "semicolon": true,
             "sub": true,
             "trailing": true,
-            "varname": false, // _hoge とかが許可されなくなるので…
-            "whitespace": [false, // WebStormのFormatterと相性が悪い
+            "varname": false,
+            "whitespace": [false,
               "check-branch",
               "check-decl",
               "check-operator",
@@ -87,7 +86,7 @@ module.exports = function (grunt) {
     clean: {
       build: {
         src: [
-          '<%= opt.client.tsTestGen %>'
+          '<%= opt.client.tsTestGen %>/**/*'
         ]
       }
     },
