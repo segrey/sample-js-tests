@@ -1,0 +1,10 @@
+server: http://localhost:9876
+load:
+  - jasmine-1.1.0.js
+  - JasmineAdapter-1.1.2.js
+  - src/subj.js
+
+
+test:
+  - test/foo.js
+  - test/subj_test.js
