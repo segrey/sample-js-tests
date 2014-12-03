@@ -1,0 +1,12 @@
+{
+  "name": "es6-example",
+  "version": "0.0.1",
+  "dependencies": {
+    "karma": "^0.12.25"
+  },
+  "devDependencies": {
+    "jasmine-core": "2.1",
+    "karma-chrome-launcher": "^0.1.5",
+    "karma-jasmine": "^0.3.1"
+  }
+}
